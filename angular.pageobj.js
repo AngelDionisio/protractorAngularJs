@@ -14,7 +14,9 @@ AngularPage.prototype  = Object.create({}, {
   todoName: {
     value: "Read Javascript!"
   },
-  todoText:   {   get: function ()     { return element(by.model('todoText'));             }},
+  todoText: { 
+    get: function () { return element(by.model('todoText'));             }
+  },
   addButton:  {   get: function ()     { return element(by.css('[value="add"]'));          }},
   yourName:   {   get: function ()     { return element(by.model('yourName'));             }},
   greeting:   {   get: function ()     { return element(by.binding('yourName')).getText(); }},
