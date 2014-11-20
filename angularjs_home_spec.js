@@ -10,8 +10,8 @@ describe('angularjs homepage', function () {
   });
  
   it('should greet the named user', function () {
-    page.typeName('Julie');
-    expect(page.greeting).toEqual('Hello Julie!');
+    page.typeName(page.nameToType);
+    expect(page.greeting).toEqual(page.expectedGreeting);
   });
  
   describe('todo list', function () {
