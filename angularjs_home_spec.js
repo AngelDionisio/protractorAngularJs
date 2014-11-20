@@ -21,9 +21,9 @@ describe('angularjs homepage', function () {
     });
  
     it('should add a todo', function () {
-      page.addTodo('write a protractor test');
+      page.addTodo(page.todoName);
       expect(page.todoList.count()).toEqual(3);
-      expect(page.todoAt(2)).toEqual('write a protractor test');
+      expect(page.todoAt(2)).toEqual(page.todoName);
     });
   });
  
